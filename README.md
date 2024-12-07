@@ -110,8 +110,8 @@ The number of columns is: 8
 
 ```
 
+## Checking for missing values
 ```python
-### **Checking for missing values**
 missing_values = df.isnull().sum()
 
 # Print the missing values for each column
@@ -136,7 +136,7 @@ else:
 | stroke              | 0              |
 
 No missing values in the dataset.
-
+```python
 
 ```
 
@@ -160,14 +160,18 @@ print(df.describe().T)
 | 75%                 | 64.00   | 0.00          | 116.25            | 33.50   | 0.00     |
 | max                 | 82.00   | 1.00          | 271.74            | 48.90   | 1.00     |
 
+'''
+
 ### **Correlation Heatmap**
 ```python
-plt.figure(figsize=(12,8))
+# Heatmap Visualization
+plt.figure(figsize=(12, 8))
 sns.heatmap(df.corr(), annot=True, cmap='coolwarm', linewidths=0.5)
 plt.title('Correlation Heatmap of All Features', fontsize=18)
 plt.show()
+
 ```
-![Correlation Heatmap](path-to-image/correlation_heatmap.png)  
+![correlation_heatmap.png)  
 
 ---
 

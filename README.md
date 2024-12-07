@@ -124,7 +124,19 @@ else:
     print("There are missing values in the dataset.")
 
 ```
-Output:  
+gender               0
+age                  0
+hypertension         0
+heart_disease        0
+avg_glucose_level    0
+bmi                  0
+smoking_status       0
+stroke               0
+dtype: int64
+
+No missing values in the dataset.
+
+
 ```
 No missing values in the dataset.
 ```

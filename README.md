@@ -132,14 +132,12 @@ else:
 | heart_disease       | 0              |
 | avg_glucose_level   | 0              |
 | bmi                 | 0              |
-| smoking_status      | 1              |
+| smoking_status      | 0              |
 | stroke              | 0              |
 
 No missing values in the dataset.
 
 
-```
-No missing values in the dataset.
 ```
 
 ---

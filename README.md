@@ -104,6 +104,10 @@ print(df.head(10))
 ```python
 print("The number of rows:", df.shape[0])
 print("The number of columns:", df.shape[1])
+
+The number of rows is: 3481
+The number of columns is: 8
+
 ```
 
 ### **Missing Values Check**

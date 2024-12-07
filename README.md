@@ -1,5 +1,6 @@
 # IMPORTING THE REQUIRED LIBRARIES 
 
+```
 import pandas as pd
 
 import numpy as np
@@ -31,7 +32,7 @@ from statsmodels.tools.tools import add_constant
 df = pd.read_csv("C:/Users/THIS PC/Desktop/brain_stroke1.csv")
 
 print(df.head(10))
-
+```
    gender  age      hypertension  heart_disease  avg_glucose_level   bmi  \
 0    Male   67  Not Hypertensive              1             228.69  36.6   
 1    Male   80  Not Hypertensive              1             105.92  32.5   

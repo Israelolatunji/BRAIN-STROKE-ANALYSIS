@@ -22,6 +22,20 @@ Stroke is one of the leading causes of death worldwide. This analysis examines k
 
 ---
 
+### **Feature Description**
+| **Feature**          | **Description**                     | **Type**    |  
+|-----------------------|-------------------------------------|-------------|  
+| `gender`             | Gender of the individual            | Categorical |  
+| `age`                | Age in years                        | Numerical   |  
+| `hypertension`       | Hypertension status                 | Categorical |  
+| `heart_disease`      | Presence of heart disease           | Categorical |  
+| `avg_glucose_level`  | Average glucose level               | Numerical   |  
+| `bmi`                | Body Mass Index                     | Numerical   |  
+| `smoking_status`     | Smoking history                     | Categorical |  
+| `stroke`             | Stroke occurrence (0: No, 1: Yes)   | Binary      |
+
+--------------
+
 ## **Dataset**  
 The dataset comprises **3,481 rows** and **8 columns** with no missing values. Below is a sample of the dataset:  
 
@@ -37,18 +51,7 @@ The dataset comprises **3,481 rows** and **8 columns** with no missing values. B
 | Female | 81  | Hypertensive      | 0             | 80.43              | 29.7 | never smoked     | 1      |  
 | Female | 61  | Not Hypertensive  | 1             | 120.46             | 36.8 | smokes           | 1      |  
 | Female | 54  | Not Hypertensive  | 0             | 104.51             | 27.3 | smokes           | 1      |  
-
-### **Feature Description**
-| **Feature**          | **Description**                     | **Type**    |  
-|-----------------------|-------------------------------------|-------------|  
-| `gender`             | Gender of the individual            | Categorical |  
-| `age`                | Age in years                        | Numerical   |  
-| `hypertension`       | Hypertension status                 | Categorical |  
-| `heart_disease`      | Presence of heart disease           | Categorical |  
-| `avg_glucose_level`  | Average glucose level               | Numerical   |  
-| `bmi`                | Body Mass Index                     | Numerical   |  
-| `smoking_status`     | Smoking history                     | Categorical |  
-| `stroke`             | Stroke occurrence (0: No, 1: Yes)   | Binary      |  
+  
 
 ---
 

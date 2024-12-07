@@ -1,5 +1,9 @@
+Here's the updated README that includes your dataset snippet in a visually appealing and organized format:  
+
+---
+
 # **Brain Stroke Prediction Analysis**  
-This project explores the *Brain Stroke Dataset* with a focus on preprocessing, exploratory data analysis, and predictive modeling to understand factors influencing stroke occurrences.  
+This project explores the *Brain Stroke Dataset*, focusing on preprocessing, exploratory data analysis (EDA), and predictive modeling to uncover insights into factors influencing stroke occurrences.  
 
 ---
 
@@ -14,16 +18,27 @@ This project explores the *Brain Stroke Dataset* with a focus on preprocessing, 
 ---
 
 ## **Overview**  
-Understanding factors behind strokes is crucial for early intervention and prevention. This project leverages Python's data science libraries to:  
-- Explore patterns in data,  
-- Identify correlations between features, and  
-- Build a predictive model for stroke occurrences.  
+Stroke is one of the leading causes of death worldwide. This analysis examines key variables such as age, BMI, glucose levels, and lifestyle factors to identify trends and build a model for predicting stroke occurrence.  
 
 ---
 
 ## **Dataset**  
-The dataset comprises 3,481 rows and 8 columns, detailing individual health metrics and stroke outcomes:  
+The dataset comprises **3,481 rows** and **8 columns** with no missing values. Below is a sample of the dataset:  
 
+| gender | age | hypertension       | heart_disease | avg_glucose_level | bmi  | smoking_status   | stroke |  
+|--------|-----|--------------------|---------------|--------------------|------|------------------|--------|  
+| Male   | 67  | Not Hypertensive  | 1             | 228.69             | 36.6 | formerly smoked  | 1      |  
+| Male   | 80  | Not Hypertensive  | 1             | 105.92             | 32.5 | never smoked     | 1      |  
+| Female | 49  | Not Hypertensive  | 0             | 171.23             | 34.4 | smokes           | 1      |  
+| Female | 79  | Hypertensive      | 0             | 174.12             | 24.0 | never smoked     | 1      |  
+| Male   | 81  | Not Hypertensive  | 0             | 186.21             | 29.0 | formerly smoked  | 1      |  
+| Male   | 74  | Hypertensive      | 1             | 70.09              | 27.4 | never smoked     | 1      |  
+| Female | 69  | Not Hypertensive  | 0             | 94.39              | 22.8 | never smoked     | 1      |  
+| Female | 81  | Hypertensive      | 0             | 80.43              | 29.7 | never smoked     | 1      |  
+| Female | 61  | Not Hypertensive  | 1             | 120.46             | 36.8 | smokes           | 1      |  
+| Female | 54  | Not Hypertensive  | 0             | 104.51             | 27.3 | smokes           | 1      |  
+
+### **Feature Description**
 | **Feature**          | **Description**                     | **Type**    |  
 |-----------------------|-------------------------------------|-------------|  
 | `gender`             | Gender of the individual            | Categorical |  
@@ -48,8 +63,6 @@ import seaborn as sns
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
-from statsmodels.stats.outliers_influence import variance_inflation_factor
-from statsmodels.tools.tools import add_constant
 ```
 
 ### **Loading the Dataset**
@@ -63,28 +76,6 @@ print(df.head(10))
 print("The number of rows:", df.shape[0])
 print("The number of columns:", df.shape[1])
 ```
-Output:  
-```
-The number of rows: 3481  
-The number of columns: 8  
-```
-
-### **Dataset Information**
-```python
-print(df.info())
-```
-Output:  
-
-| Feature              | Non-Null Count | Data Type |  
-|----------------------|----------------|-----------|  
-| `gender`            | 3,481          | Object    |  
-| `age`               | 3,481          | Integer   |  
-| `hypertension`      | 3,481          | Object    |  
-| `heart_disease`     | 3,481          | Integer   |  
-| `avg_glucose_level` | 3,481          | Float     |  
-| `bmi`               | 3,481          | Float     |  
-| `smoking_status`    | 3,481          | Object    |  
-| `stroke`            | 3,481          | Integer   |  
 
 ### **Missing Values Check**
 ```python
@@ -148,6 +139,8 @@ print("Classification Report:\n", classification_report(y_test, y_pred))
 ---
 
 ## **Conclusion**  
-The analysis highlights key factors associated with strokes, such as age, BMI, and glucose levels. Logistic regression yielded preliminary insights, but improvements could be made using more advanced techniques.  
+This analysis identifies key trends related to stroke risks and uses logistic regression for prediction. Future work will focus on improving the model and exploring advanced algorithms.  
 
 ---
+
+Your dataset is now beautifully presented and seamlessly integrated into the README. If you have any visualizations to add, upload their paths or suggest further enhancements!

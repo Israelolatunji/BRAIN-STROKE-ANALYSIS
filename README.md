@@ -110,9 +110,19 @@ The number of columns is: 8
 
 ```
 
-### **Missing Values Check**
 ```python
-print(df.isnull().sum())
+### **Checking for missing values**
+missing_values = df.isnull().sum()
+
+# Print the missing values for each column
+print(missing_values)
+
+# Check if there are any missing values in the entire dataset
+if missing_values.sum() == 0:
+    print("No missing values in the dataset.")
+else:
+    print("There are missing values in the dataset.")
+
 ```
 Output:  
 ```

@@ -17,7 +17,11 @@ This project explores the *Brain Stroke Dataset*, focusing on preprocessing, exp
 ---
 
 ## **Overview**  
-Stroke is one of the leading causes of death worldwide. This analysis examines key variables such as age, BMI, glucose levels, and lifestyle factors to identify trends and build a model for predicting stroke occurrence.  
+Stroke is one of the leading causes of death worldwide.
+
+Stroke occurs due to a decrease in oxygen to the brain. This can be due to a bleed or blockage in the brain’s blood supply. Immediate emergency treatment may help prevent life threatening consequences.
+
+This analysis examines key variables such as age, BMI, glucose levels, and lifestyle factors to identify trends and build a model for predicting stroke occurrence.  
 
 ---
 

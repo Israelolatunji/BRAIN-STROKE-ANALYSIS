@@ -209,5 +209,3 @@ print("Classification Report:\n", classification_report(y_test, y_pred))
 This analysis identifies key trends related to stroke risks and uses logistic regression for prediction. Future work will focus on improving the model and exploring advanced algorithms.  
 
 ---
-
-Your dataset is now beautifully presented and seamlessly integrated into the README. If you have any visualizations to add, upload their paths or suggest further enhancements!
